@@ -1,7 +1,7 @@
 import gurobipy as gp
 from gurobipy import GRB
 
-# Variation of mip1.py, with a focus on remote services
+# Variation of mip1_test2.py, with a focus on remote services
 #
 # When remote resources are tied to the optimization process, such as a token
 # server, compute server, or Instant Cloud, extra care should be taken to
@@ -13,7 +13,7 @@ from gurobipy import GRB
 # See also https://www.gurobi.com/documentation/9.1/refman/environments.html
 
 def populate_and_solve(m):
-    # This function formulates and solves the following MIP model (see mip1.py):
+    # This function formulates and solves the following MIP model (see mip1_test2.py):
     #  maximize
     #        x +   y + 2 z
     #  subject to
